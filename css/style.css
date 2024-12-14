@@ -1,39 +1,109 @@
+/* -------------------------- initialization ------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-body {
+body{
     background-color: rgb(242, 226, 206);
 }
-/* -------------------------- section 0 ------------------------- */
-.header-icon{
-    color: aliceblue;
-    font-size: 20px;
-    margin: 10px 20px;
+
+/* -------------------------- Grouping ------------------------- */
+.section2,.section4,.section5,.section7,.section9,.section10{
+    width: 100%;
+    height: 85vh;
+    margin-top: 50px;
+    padding: 1% 0% ;
 }
-.header-input{
-    border-radius: 10px;
-    width: 200px;
-    font-size: 20px;
-    padding-left: 5px;
+/* Center */
+.section1-content , .photo-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
+/* overlay */
+.section1-overlay , .section3-overlay , .section6-overlay , .section8-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* line */
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: rgb(234, 97, 0);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+/* titles */
+.section2-title , .section4-title,.section5-h , .section7-h, .section9-h ,.section10-h{
+    color: #732E06;
+    text-align: center;
+    font-size: 45px;
+}
+/* a */
+a{
+    color:rgb(234, 97, 0);
+    text-decoration: none;
+    font-size: 20;
+    margin: 10px 10px;
+}
+/* icon */
+.icon {
+    margin: 10px;
+    color: rgb(234, 97, 0);
+    font-size: 50px;
+}
+/* after */
+.section2-oneSquare::after , .section7-div::after , .section9-div::after , .section10-div::after{
+    content: "";
+    position: absolute;
+    width: 100;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(234, 97, 0 , 0.2);
+    transition: 0.5s;
+    z-index: -1;
+}
+.section2-oneSquare:hover::after , .section7-div:hover::after , .section9-div:hover::after , .section10-div:hover::after{
+    width: 100%;
+    height: 100%;
+}
+/* -------------------------- header section ------------------------- */
 .header{
     width: 100%;
     height: 40px;
+    top:0;
     z-index: 20;
     position: fixed;
-    background-color:  rgba(234, 97, 0,0.8);
+    background-color:rgba(234, 97, 0,0.8);
 }
-.header-h3 , .pages{
+.header-icon{
+    color: aliceblue;
+    font-size: 20px;
+    margin: 10px 10px;
+}
+.header-input{
+    border-radius: 10px;
+    width: 20%;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.header-h3{
     display: inline;
-    margin: 0px 10px;
+    margin: 0px 4px;
     color: aliceblue;
 }
-.pages{
-    margin-left: 680px;
+.header-nav{
+    display: inline;
+    position: absolute;
+    right: 0;
+    margin: 8px 5px;
     cursor: pointer;
 }
 .header-h3:hover {
@@ -47,150 +117,94 @@ body {
     background-size: cover;
     position: relative;
 }
-
-.home-overlay , .section3-overlay , .section6-overlay , .section8-overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.home-content , .photo-content{
+.section1-content{
     width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
-
-h1{
+.section1-content h1{
     color: white;
     text-transform: uppercase;
     font-size: 60px;
     margin-bottom: 10px;
 }
-
-.home-p{
+.section1-p{
     color: rgb(242, 226, 206);
     margin-bottom: 10px;
     letter-spacing: 1.5px;
 }
-
-.home-button{
+.section1-button{
     width: 150px;
     height: 40px ;
     font-size: 15px;
     border-radius: 10px;
     margin: 0px 10px;
 }
-
-.orange-home-button{
+.section1-button-diff{
     background-color: rgb(234, 97, 0);
     color: aliceblue;
 }
-
-.home-button:hover{
-    opacity: 0.8;
+.section1-button:hover{
+    opacity: 0.85;
     cursor: pointer;
 }
-
 /* -------------------------- section 2 ------------------------- */
-.section2{
-    width: 100%;
-    height: 85vh;
+.section2-all-squares{
+    overflow: auto;
     color: #732E06;
 }
-
-.home-title-div {
-    margin-top: 60px;
-    text-align: center;
-    font-size: 25px;
-}
-
-.line{
-    width: 100px;
-    height: 5px;
-    background-color: rgb(234, 97, 0);
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
-.square{
-    width: 350px;
-    height: 280px;
-    display: inline-block;
-    margin: 5% 2%;
-    border: 3px solid #732E06;
+.section2-oneSquare , .section7-div , .section9-div , .section10-div{
+    width: 20%;
+    height: 50%;
+    float: left;
+    margin: 5% 20px;
+    padding: 1% 1%;
+    border: 4px solid #732E06;
     border-radius: 10px;
     text-align: center;
     position: relative;
 }
-
 .square1{
-    margin-left:10%;
+    margin-left: 17%;
 }
-
-.home-title-icon {
-    color: rgb(234, 97, 0);
-    font-size: 45px;
-}
-.icon-title{
+.section2-title{
     font-weight: bold;
     font-size: 20;
 }
-.icon-title , .icon-p , a , .home-title-icon{
-    margin: 22px;
-}
-a{
-    color:rgb(234, 97, 0);
-    text-decoration: none;
-    font-size: 20;
-}
-.square::after{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: 0;
-    left: 0;
-    background-color: rgba(234, 97, 0 , 0.5);
-    transition: 0.5s;
-    z-index: -1;
-}
-.square:hover::after{
-    width: 100%;
-    height: 100%;
-    /* opacity: 0.4; */
+.section2-title, .section2-oneSquare-p , a , .section2-oneSquare-title{
+    margin: 15px;
 }
 /* -------------------------- section 3 ------------------------- */
-
 .section3{
     width: 100%;
     height: 100vh;
     background-image: url("https://t3.ftcdn.net/jpg/00/12/84/66/360_F_12846659_LHw70Atkr6QefHgMnOeKO132ZkEHITgU.jpg");
     background-size: cover;
-    background-color: #732E06;
 }
-.main-dishes-title-div , .offer-title{
+.section3-title{
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     color:  aliceblue;
-    margin-top: 30px;
+    margin-top: 20px;
     text-transform: capitalize;
 }
-
-.main-dishes-photoes{
+.section3-photoes{
     width: 85%;
-    height: 70vh;
+    height: 70%;
     margin: auto;
 }
-
-.photo{
-    width: 300px;
-    height: 200px;
+.section3-photoes-f3,.section4-square-f3{
+    height: 50%;
+    text-align: center;
+}
+.section3-photoes-l3 , .section4-square-l3{
+    height: 50%;
+    text-align: center;
+}
+.photo , .section4square{
+    width: 25%;
+    height: 90%;
     display: inline-block;
-    margin: 30px 55px;
+    margin: 1% 2%;
     background-size: cover;
     background-position: center;
     border: 5px dashed aliceblue ;
@@ -199,24 +213,22 @@ a{
     color: aliceblue ;
     position: relative;
 }
-
-
-.main-dishes-photo1{
+.section3-photo1{
     background-image: url("https://radhunilounge.com/wp-content/uploads/elementor/thumbs/popular-indian-dishes-2-qtloxlcvzce4to84fay34cihul8acix3kbjne3ndig.webp");
 }
-.main-dishes-photo2{
+.section3-photo2{
     background-image: url("https://static01.nyt.com/images/2023/12/11/multimedia/11top-dishes-national7-zqfk/11top-dishes-national7-zqfk-videoSixteenByNine3000.jpg");
 }
-.main-dishes-photo3{
+.section3-photo3{
     background-image: url("https://womenchefs.org/wp-content/uploads/2023/08/French-Side-Dishes.jpg");
 }
-.main-dishes-photo4{
+.section3-photo4{
     background-image: url("https://www.foodandwine.com/thmb/fVmYbaQzXCz1Prx8VxrW9sMcjMU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Braciole-FT-RECIPE1122-66acf49cef0e4390bec780945709e7f3.jpg");
 }
-.main-dishes-photo5{
+.section3-photo5{
     background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/220526171611-11-classic-french-dishes-ratatouille.jpg?q=w_1110,c_fill");
 }
-.main-dishes-photo6{
+.section3-photo6{
     background-image: url("https://www.foodrepublic.com/img/gallery/22-most-influential-international-dishes-of-all-time/l-intro-1689274811.jpg");
 }
 .photo-content{
@@ -238,66 +250,44 @@ a{
 .photo:hover .photo-content{
     visibility: visible;
 }
-
 /* -------------------------- section 4 ------------------------- */
-.section4{
-    width: 100%;
-    height: 100vh;
-    margin: auto;
-}
-.offer-title{
-    color: #732E06;
+.section4-title{
     margin-bottom: 10px;
 }
-.offer-squares{
+.section4-all-squares{
     width: 85%;
     height: 85%;
     margin: auto;
     margin-top: -40px;
 }
-.offersquare{
-    width: 350px;
-    height: 280px;
+.section4square{
     border: 3px solid #732E06;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 0.5% 2.7%;
-    text-align: center;
+    color: #732E06;
 }
-.offer-icon-div{
+.section4-icon-div{
     font-size: 40px;
     margin: 20px;
     color: rgb(234, 97, 0);
 }
-.offersquare:hover , .offersquare:hover .offer-icon-div{
+.section4square:hover , .section4square:hover .section4-icon-div{
     color: aliceblue;
     background-color: rgb(234, 97, 0);
 } 
-
 /* -------------------------- section 5 ------------------------- */
-.section5{
-    width: 100%;
-    height: 80vh;
-    position: relative;
-}
 .section5-div{
     width: 80%;
     height: 80%;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    margin: 5% 10%;
+    color: #732E06;
 }
 .section5-leftContent{
-    width: 70%;
+    width: 60%;
     height: 100%;
+    margin-top: 40px;
     display: inline-block;
 }
-.section5-h , .section7-h{
-    font-size: 40px;
-    color: #732E06;
-    text-transform: capitalize;
-    margin-top: 60px ;
+.section5-h{
+    text-align: left;
 }
 .section5-line{
     margin: 0px;
@@ -340,8 +330,6 @@ a{
     color: aliceblue;
     cursor: pointer;
 }
-
-
 /* -------------------------- section 6 ------------------------- */
 .section6{
     width: 100%;
@@ -370,32 +358,18 @@ a{
 }
 .icon{
     font-size: 45px;
+    color: aliceblue;
 }
 .section6-icon i:hover{
     color: rgb(234, 97, 0);
 }
 /* -------------------------- section 7 ------------------------- */
-.section7{
-    width: 100%;
-    height: 90vh;
-    text-align: center;
-    margin: auto;
-}
-.section7-h{
-    text-align: center;
-    font-size: 45;
-}
 .section7-div{
-    width: 27%;
-    height: 60%;
-    float: left;
-    border:4px solid #732E06;
-    border-radius: 10px;
-    margin: 0px 20px;
-    position: relative;
+    height: 75%;
+    margin-top: -20px;
 }
 .s7-div1{
-    margin-left: 100px;
+    margin-left: 17.5%;
 }
 .section7-circle{
     width: 150px;
@@ -430,29 +404,14 @@ a{
     color: aliceblue;
     font-size: 15px;
 }
-.section7-div::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    background-color: rgba(234, 97, 0 , 0.5);
-    transition: 0.5s;
-    z-index: -1;
-}
 .section7-div:hover .section7-circle{
     background-color: aliceblue;
-}
-.section7-div:hover::after{
-    width: 100%;
-    height: 100%;
-    /* opacity: 0.4; */
 }
 /* -------------------------- section 8 ------------------------- */
 .section8{
     width: 100%;
     height: 60vh;
+    margin: 100px 0px;
     background-image: url("https://images.squarespace-cdn.com/content/v1/62fef5406043066a5b5da4e8/7001dd52-92bb-44a7-b6fb-6b4d5644fcd6/Palace+Grill+Restaurant-100.jpg");
     background-attachment: fixed ;
     color: aliceblue;
@@ -461,11 +420,10 @@ a{
     height: 60vh;
 }
 .section8-div{
-    width: 450px;
-    height: 350px;
+    width: 30%;
     float: left;
     margin-left: 70px;
-    margin-top: 60px;
+    margin-top: 3%;
 }
 .section8-img-div{
     width: 100%;
@@ -480,11 +438,11 @@ a{
     font-size: 17px;
 }
 .section8-div1{
-    margin-left: 260px;
+    margin-left: 20%;
 }
 .section8-img{
     width: 250px;
-    height: 260px;
+    height: 250px;
     border-radius: 50%;
     margin-right: 30px;
     float: left;
@@ -500,29 +458,22 @@ a{
 }
 /* -------------------------- section 9 ------------------------- */
 .section9{
-    width: 100%;
-    height: 94vh;
     margin: 100px 0px;
     padding: 3% 3%;
     overflow: auto;
     text-align: center;
 }
-.section9-h ,.section10-h{
-    font-size: 40px;
-    color: #732E06;
-}
 .section9-div{
+    height: 70%;
     border: 5px solid #732E06;
     float: left;
-    width: 300px;
-    height: 380px;
-    margin: 0px 30px;
+    margin: 0px 1%;
     padding: 3% 3%;
     border-radius: 30px;
     position: relative;
 }
 .s9-div1{
-    margin-left: 200px;
+    margin-left: 18%;
 }
 .section9-image-div{
     width: 90%;
@@ -557,7 +508,6 @@ a{
 .section9-div:hover .section9-icons {
     visibility: visible;
 }
-
 .section9-img1{
     background-image: url("https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg");
 }
@@ -567,44 +517,22 @@ a{
 .section9-img3{
     background-image: url("https://plus.unsplash.com/premium_photo-1690579805307-7ec030c75543?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29uJTIwaWNvbnxlbnwwfHwwfHx8MA%3D%3D");
 }
-.section9-div::after{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: 0;
-    left: 0;
-    background-color: rgba(234, 97, 0 , 0.5);
-    transition: 0.5s;
-    border-radius: 28px;
-    z-index: -1;
-}
-.section9-div:hover::after{
-    width: 100%;
-    height: 100%;
-    /* opacity: 0.4; */
-}
 /* -------------------------- section 10 ------------------------- */
 .section10{
-    width: 100%;
-    height: 94vh;
-    margin: 100px 0px;
-    padding: 3% 3%;
     overflow: auto;
     text-align: center;
 }
 .section10-div{
+    height: 70%;
     border: 5px solid #732E06;
     float: left;
-    width: 350px;
-    height: 450px;
-    margin: 0px 30px;
+    margin: 0px 10px;
     padding: 2% 0.5%;
     border-radius: 30px;
     position: relative;
 }
 .s10-div1 {
-    margin-left: 120px;
+    margin-left: 18%;
 }
 .s10-img1{
     background-image: url("https://static01.nyt.com/images/2022/11/16/dining/15OFF/merlin_216610422_f6fb4cc2-026d-402b-a4d4-e7c516b1f965-articleLarge.jpg?quality=75&auto=webp&disable=upscale");
@@ -617,7 +545,7 @@ a{
 }
 .section10-image-div{
     width: 90%;
-    height: 80%;
+    height: 60%;
     margin: auto;
     background-size: cover;
     background-position: center;
@@ -625,31 +553,14 @@ a{
     padding: 3px 3px;
 }
 .section10-div-h{
-    margin: 10px;
+    margin: 5px;
     color: #732E06;
 }
 .section10-icons i{
     display: inline-block;
 }
-.section10-div::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    background-color: rgba(234, 97, 0 , 0.5);
-    transition: 0.5s;
-    border-radius: 28px;
-    z-index: -1;
-}
-.section10-div:hover::after{
-    width: 100%;
-    height: 100%;
-}
-
-/* -------------------------- section 11 ------------------------- */
-.section11{
+/* -------------------------- footer section ------------------------- */
+.footer{
     width: 100%;
     height: 20vh;
     background-color: rgb(234, 97, 0);
