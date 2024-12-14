@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(242, 226, 206);
+}
+/* -------------------------- section 0 ------------------------- */
+.header-icon{
+    color: aliceblue;
+    font-size: 20px;
+    margin: 10px 20px;
+}
+.header-input{
+    border-radius: 10px;
+    width: 200px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.header{
+    width: 100%;
+    height: 40px;
+    z-index: 20;
+    position: fixed;
+    background-color:  rgba(234, 97, 0,0.8);
+}
+.header-h3 , .pages{
+    display: inline;
+    margin: 0px 10px;
+    color: aliceblue;
+}
+.pages{
+    margin-left: 680px;
+    cursor: pointer;
+}
+.header-h3:hover {
+    text-decoration: underline;
+}
+/* -------------------------- section 1 ------------------------- */
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/premium-photo/restaurant-food-restaurant-menu-photos-menu_830198-777.jpg?semt=ais_hybrid");
+    background-size: cover;
+    position: relative;
+}
+
+.home-overlay , .section3-overlay , .section6-overlay , .section8-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-content , .photo-content{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.home-p{
+    color: rgb(242, 226, 206);
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.home-button{
+    width: 150px;
+    height: 40px ;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+.orange-home-button{
+    background-color: rgb(234, 97, 0);
+    color: aliceblue;
+}
+
+.home-button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* -------------------------- section 2 ------------------------- */
+.section2{
+    width: 100%;
+    height: 85vh;
+    color: #732E06;
+}
+
+.home-title-div {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: rgb(234, 97, 0);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.square{
+    width: 350px;
+    height: 280px;
+    display: inline-block;
+    margin: 5% 2%;
+    border: 3px solid #732E06;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.square1{
+    margin-left:10%;
+}
+
+.home-title-icon {
+    color: rgb(234, 97, 0);
+    font-size: 45px;
+}
+.icon-title{
+    font-weight: bold;
+    font-size: 20;
+}
+.icon-title , .icon-p , a , .home-title-icon{
+    margin: 22px;
+}
+a{
+    color:rgb(234, 97, 0);
+    text-decoration: none;
+    font-size: 20;
+}
+.square::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(234, 97, 0 , 0.5);
+    transition: 0.5s;
+    z-index: -1;
+}
+.square:hover::after{
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.4; */
+}
+/* -------------------------- section 3 ------------------------- */
+
+.section3{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://t3.ftcdn.net/jpg/00/12/84/66/360_F_12846659_LHw70Atkr6QefHgMnOeKO132ZkEHITgU.jpg");
+    background-size: cover;
+    background-color: #732E06;
+}
+.main-dishes-title-div , .offer-title{
+    text-align: center;
+    font-size: 35px;
+    color:  aliceblue;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.main-dishes-photoes{
+    width: 85%;
+    height: 70vh;
+    margin: auto;
+}
+
+.photo{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin: 30px 55px;
+    background-size: cover;
+    background-position: center;
+    border: 5px dashed aliceblue ;
+    border-radius: 10px;
+    text-align: center;
+    color: aliceblue ;
+    position: relative;
+}
+
+
+.main-dishes-photo1{
+    background-image: url("https://radhunilounge.com/wp-content/uploads/elementor/thumbs/popular-indian-dishes-2-qtloxlcvzce4to84fay34cihul8acix3kbjne3ndig.webp");
+}
+.main-dishes-photo2{
+    background-image: url("https://static01.nyt.com/images/2023/12/11/multimedia/11top-dishes-national7-zqfk/11top-dishes-national7-zqfk-videoSixteenByNine3000.jpg");
+}
+.main-dishes-photo3{
+    background-image: url("https://womenchefs.org/wp-content/uploads/2023/08/French-Side-Dishes.jpg");
+}
+.main-dishes-photo4{
+    background-image: url("https://www.foodandwine.com/thmb/fVmYbaQzXCz1Prx8VxrW9sMcjMU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Braciole-FT-RECIPE1122-66acf49cef0e4390bec780945709e7f3.jpg");
+}
+.main-dishes-photo5{
+    background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/220526171611-11-classic-french-dishes-ratatouille.jpg?q=w_1110,c_fill");
+}
+.main-dishes-photo6{
+    background-image: url("https://www.foodrepublic.com/img/gallery/22-most-influential-international-dishes-of-all-time/l-intro-1689274811.jpg");
+}
+.photo-content{
+    visibility: hidden;
+    font-size: 20px;
+}
+.photo-content-title{
+    text-transform: uppercase;
+}
+.photo-content-p , .photo-content-title{
+    margin: 10px 2px;
+}
+.photo:hover .photo-content-overlay {
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(234, 97, 0 , 0.5);
+}
+
+.photo:hover .photo-content{
+    visibility: visible;
+}
+
+/* -------------------------- section 4 ------------------------- */
+.section4{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+.offer-title{
+    color: #732E06;
+    margin-bottom: 10px;
+}
+.offer-squares{
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    margin-top: -40px;
+}
+.offersquare{
+    width: 350px;
+    height: 280px;
+    border: 3px solid #732E06;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0.5% 2.7%;
+    text-align: center;
+}
+.offer-icon-div{
+    font-size: 40px;
+    margin: 20px;
+    color: rgb(234, 97, 0);
+}
+.offersquare:hover , .offersquare:hover .offer-icon-div{
+    color: aliceblue;
+    background-color: rgb(234, 97, 0);
+} 
+
+/* -------------------------- section 5 ------------------------- */
+.section5{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.section5-div{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.section5-leftContent{
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+}
+.section5-h , .section7-h{
+    font-size: 40px;
+    color: #732E06;
+    text-transform: capitalize;
+    margin-top: 60px ;
+}
+.section5-line{
+    margin: 0px;
+}
+.section5-leftContent p{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+.section5-icon{
+    position: absolute;
+}
+.section5-p{
+    transform: translate(30px,0px);
+}
+.section5-rigthContent{
+    width: 300px;
+    height:450px;
+    float: right;
+}
+.section5-image{
+    width: 100%;
+    height:90%;
+    background-image: url("https://cdn.pixabay.com/photo/2022/05/22/13/21/healthy-7213383_1280.jpg");
+    background-size: cover;
+}
+.section5-rigthContent ul{
+    margin: 10px auto;
+    text-align: center;
+}
+.section5-rigthContent li{
+    width: 20px;
+    height: 20px;
+    background-color:rgb(234, 97, 0);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px auto;
+}
+.section5-rigthContent li:hover , .section7-div-button:hover{
+    background-color: #732E06;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+/* -------------------------- section 6 ------------------------- */
+.section6{
+    width: 100%;
+    height: 60vh;
+    margin: 120px auto;
+    background-image: url("https://assets.vogue.com/photos/670d5d3a2c5f2bd9f8552edf/4:3/w_1600%2Cc_limit/Dogon%2520Tablescape%2520-%2520Credit%2520Scott%2520Suchman.jpg");
+    background-attachment: fixed ;
+    color: aliceblue;
+}
+.section6-overlay{
+    height: 60vh;
+    position: relative;
+}
+.section6-all-div{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.section6-icon{
+    float: left;
+    text-align: center;
+}
+.section6-icon p{
+    margin: 20px 30px;
+}
+.icon{
+    font-size: 45px;
+}
+.section6-icon i:hover{
+    color: rgb(234, 97, 0);
+}
+/* -------------------------- section 7 ------------------------- */
+.section7{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    margin: auto;
+}
+.section7-h{
+    text-align: center;
+    font-size: 45;
+}
+.section7-div{
+    width: 27%;
+    height: 60%;
+    float: left;
+    border:4px solid #732E06;
+    border-radius: 10px;
+    margin: 0px 20px;
+    position: relative;
+}
+.s7-div1{
+    margin-left: 100px;
+}
+.section7-circle{
+    width: 150px;
+    height: 150px;
+    border: 5px solid rgb(234, 97, 0);
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+.section7-circle p {
+    font-size: 30px ;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: rgb(234, 97, 0);
+}
+.section7-div-h{
+    color:  #732E06;
+    font-size: 25px;
+    margin: 20px auto;
+}
+.section7-p{
+    color: #732E06;
+    margin: 15px auto;
+}
+.section7-div-button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(234, 97, 0);
+    color: aliceblue;
+    font-size: 15px;
+}
+.section7-div::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(234, 97, 0 , 0.5);
+    transition: 0.5s;
+    z-index: -1;
+}
+.section7-div:hover .section7-circle{
+    background-color: aliceblue;
+}
+.section7-div:hover::after{
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.4; */
+}
+/* -------------------------- section 8 ------------------------- */
+.section8{
+    width: 100%;
+    height: 60vh;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/62fef5406043066a5b5da4e8/7001dd52-92bb-44a7-b6fb-6b4d5644fcd6/Palace+Grill+Restaurant-100.jpg");
+    background-attachment: fixed ;
+    color: aliceblue;
+}
+.section8-overlay{
+    height: 60vh;
+}
+.section8-div{
+    width: 450px;
+    height: 350px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 60px;
+}
+.section8-img-div{
+    width: 100%;
+    overflow: auto;
+}
+.section8-img-div h3{
+    margin-top: 100px;
+    font-size: 30px;
+}
+.section8-div p{
+    text-transform: capitalize;
+    font-size: 17px;
+}
+.section8-div1{
+    margin-left: 260px;
+}
+.section8-img{
+    width: 250px;
+    height: 260px;
+    border-radius: 50%;
+    margin-right: 30px;
+    float: left;
+}
+.section8-img1{
+    background-image: url("https://madre.my/cdn/shop/products/Bawal-20.jpg?v=1710814258&width=360");
+    background-size: cover;
+}
+.section8-img2{
+    background-image: url("https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww");
+    background-size: cover;
+    background-position: center;
+}
+/* -------------------------- section 9 ------------------------- */
+.section9{
+    width: 100%;
+    height: 94vh;
+    margin: 100px 0px;
+    padding: 3% 3%;
+    overflow: auto;
+    text-align: center;
+}
+.section9-h ,.section10-h{
+    font-size: 40px;
+    color: #732E06;
+}
+.section9-div{
+    border: 5px solid #732E06;
+    float: left;
+    width: 300px;
+    height: 380px;
+    margin: 0px 30px;
+    padding: 3% 3%;
+    border-radius: 30px;
+    position: relative;
+}
+.s9-div1{
+    margin-left: 200px;
+}
+.section9-image-div{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+.section9-icons{
+    position: absolute;
+    width: 30%;
+    background-color: rgb(234, 97, 0);
+    color: aliceblue;
+    right: 0;
+    font-size: 30px;
+    visibility: hidden;
+}
+.section9-icon{
+    margin: 3% 1%;
+    display: block;
+    cursor: pointer;
+}
+.section9-div-h{
+    margin-top: 10px;
+    color: rgb(234, 97, 0);
+}
+.section9-p{
+    color: #732E06;
+}
+.section9-div:hover .section9-icons {
+    visibility: visible;
+}
+
+.section9-img1{
+    background-image: url("https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg");
+}
+.section9-img2{
+    background-image: url("https://wehearyou.lk/wp-content/uploads/2020/12/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg");
+}
+.section9-img3{
+    background-image: url("https://plus.unsplash.com/premium_photo-1690579805307-7ec030c75543?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29uJTIwaWNvbnxlbnwwfHwwfHx8MA%3D%3D");
+}
+.section9-div::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(234, 97, 0 , 0.5);
+    transition: 0.5s;
+    border-radius: 28px;
+    z-index: -1;
+}
+.section9-div:hover::after{
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.4; */
+}
+/* -------------------------- section 10 ------------------------- */
+.section10{
+    width: 100%;
+    height: 94vh;
+    margin: 100px 0px;
+    padding: 3% 3%;
+    overflow: auto;
+    text-align: center;
+}
+.section10-div{
+    border: 5px solid #732E06;
+    float: left;
+    width: 350px;
+    height: 450px;
+    margin: 0px 30px;
+    padding: 2% 0.5%;
+    border-radius: 30px;
+    position: relative;
+}
+.s10-div1 {
+    margin-left: 120px;
+}
+.s10-img1{
+    background-image: url("https://static01.nyt.com/images/2022/11/16/dining/15OFF/merlin_216610422_f6fb4cc2-026d-402b-a4d4-e7c516b1f965-articleLarge.jpg?quality=75&auto=webp&disable=upscale");
+}
+.s10-img2{
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a0/5c/43/restaurante-front-view.jpg?w=900&h=500&s=1");
+}
+.s10-img3{
+    background-image: url("https://ozara.in/wp-content/uploads/2024/01/1.png");
+}
+.section10-image-div{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    padding: 3px 3px;
+}
+.section10-div-h{
+    margin: 10px;
+    color: #732E06;
+}
+.section10-icons i{
+    display: inline-block;
+}
+.section10-div::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(234, 97, 0 , 0.5);
+    transition: 0.5s;
+    border-radius: 28px;
+    z-index: -1;
+}
+.section10-div:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------------------- section 11 ------------------------- */
+.section11{
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(234, 97, 0);
+    color: aliceblue;
+    padding: 1% 10%;
+}
+.footer-icons{
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 40px;
+}
+.s11-icon:hover{
+    color: #732E06;
+}
