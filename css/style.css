@@ -356,10 +356,6 @@ a{
 .section6-icon p{
     margin: 20px 30px;
 }
-.icon{
-    font-size: 45px;
-    color: aliceblue;
-}
 .section6-icon i:hover{
     color: rgb(234, 97, 0);
 }
