@@ -1,6 +1,6 @@
 # Restaurant Website Design
-![Restaurant Website Screenshot](![photo_5979076711121274837_w](https://github.com/user-attachments/assets/69dda9dc-3446-4361-8ec3-ad2fe71a1010)
-)
+![photo_5979076711121274837_w](https://github.com/user-attachments/assets/69dda9dc-3446-4361-8ec3-ad2fe71a1010)
+
 This is a restaurant website I designed using **HTML** and **CSS** to create a visually appealing, responsive, and user-friendly experience.
 
 ### Features:
